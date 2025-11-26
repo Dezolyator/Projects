@@ -1,0 +1,16 @@
+<svg width="16.000000" height="12.000000" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<clipPath id="clip6_2087">
+			<rect id="country=uk" rx="0.000000" width="15.802014" height="11.802014" transform="translate(0.098993 0.098993)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="country=uk" rx="0.000000" width="15.802014" height="11.802014" transform="translate(0.098993 0.098993)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip6_2087)">
+		<rect id="Frame 148" rx="0.000000" width="23.802013" height="11.802014" transform="translate(-3.901007 0.098993)" fill="#FFFFFF" fill-opacity="0"/>
+		<rect id="Frame 149" rx="0.000000" width="23.623665" height="11.712837" transform="translate(-3.901007 0.098993)" fill="#FFFFFF" fill-opacity="0"/>
+		<path id="Vector" d="M-4 0L19.82 0L19.82 12L-4 12L-4 0Z" fill="#0039A6" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M-4 0L-4 1.34L17.15 12L19.82 12L19.82 10.65L-1.34 0L-4 0ZM19.82 0L19.82 1.34L-1.34 12L-4 12L-4 10.65L17.15 0L19.82 0Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M5.92 0L5.92 12L9.89 12L9.89 0L5.92 0ZM-4 4L-4 7.99L19.82 7.99L19.82 4L-4 4Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M-4 4.8L-4 7.19L19.82 7.19L19.82 4.8L-4 4.8ZM6.71 0L6.71 12L9.1 12L9.1 0L6.71 0ZM-4 12L3.93 7.99L5.71 7.99L-2.23 12L-4 12ZM-4 0L3.93 4L2.16 4L-4 0.89L-4 0ZM10.1 4L18.04 0L19.82 0L11.88 4L10.1 4ZM19.82 12L11.88 7.99L13.65 7.99L19.82 11.1L19.82 12Z" fill="#D52B1E" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
