@@ -1,0 +1,369 @@
+@media (max-width: 1500px) {
+    .about-us__title {
+        padding-left: 30px;
+        max-width: 300px;
+    }
+
+    .about-us__text ::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 27%;
+    width: 2px;
+    height: 100%;
+    background: #bea990;
+}
+
+.about-us__text {
+    max-width: 70%;
+}
+}
+
+@media (max-width: 1024px) {
+
+.header__container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.hero {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.services__block {
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 350px;
+}
+
+.services__block__title {
+    font-size: 28px;
+}
+
+.services__block__descr {
+    font-size: 16px;
+}
+
+.services__block__links {
+    margin-bottom: 30px;
+}
+
+.reviews__block {
+    max-width: 550px;
+}
+
+.reviews__blocks {
+    padding-left: 0;
+}
+
+.reviews__block__text {
+    margin-bottom: 15px;
+}
+
+.reviews__block__text > svg {
+    width: 30px;
+}
+
+.client {
+    margin-bottom: 20px;
+}
+
+.info__decor {
+    width: 100%;
+}
+
+.info__adress {
+    max-width: 400px;
+}
+}
+
+@media (max-width: 1024px) {
+
+.hero {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.hero__title {
+    font-size: 55px;
+}
+.hero__text {
+    margin-bottom: 20px;
+}
+
+.about-us {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.about-us__title {
+    font-size: 25px;
+}
+
+.about-us__descr {
+    font-size: 16px;
+}
+
+.services {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.services__title {
+    font-size: 38px;
+}
+
+.services__descr {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.services__block {
+    max-width: 250px;
+}
+
+.services__block__text {
+    padding: 20px 20px 0 20px;
+    margin-bottom: 20px;
+}
+
+.services__block__title {
+    font-size: 25px;
+}
+
+.services__block__links {
+    margin-bottom: 20px;
+}
+
+.ribbon__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.reviews {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.reviews__title {
+    font-size: 37px;
+}
+
+.reviews__descr {
+    font-size: 16px;
+}
+
+.reviews__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.reviews__block__text {
+    padding: 20px 20px 0 20px;
+}
+
+.reviews__block__descr {
+    font-size: 16px;
+}
+
+.footer {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.info__name {
+    font-size: 18px;
+}
+
+.info__email, .info__adress, .info__phone {
+    font-size: 16px;
+}
+
+.info__icon {
+    right: 30%;
+}
+
+.info__descr {
+    font-size: 16px;
+}
+}
+
+@media (max-width: 768px) {
+
+.header__container {
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header__logo > svg {
+    width: 40px;
+}
+
+.header__logo {
+    margin-right: 150px;
+}
+
+.header__link {
+    font-size: 10px;
+}
+
+.header__nav {
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.hero {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.hero__title {
+    font-size: 40px;
+}
+
+.hero__btn-1, .hero__btn-2 {
+    padding: 4px 0px;
+    width: 70px;
+    font-size: 12px;
+}
+
+.about-us {
+    padding: 30px 15px;
+}
+
+.about-us__title {
+    padding-left: 0;
+    font-size: 16px;
+}
+
+.about-us__descr {
+    font-size: 10px;
+}
+
+.about-us__text ::before {
+    position: relative;
+}
+
+.about-us__text {
+    max-width: 65%;
+}
+
+.services {
+    padding: 30px 15px;
+}
+
+.services__title {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.services__descr {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.services__block__title {
+    font-size: 18px;
+}
+
+.services__block__descr {
+    font-size: 12px;
+}
+
+.services__block__link {
+    font-size: 14px;
+}
+
+.ribbon__container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.ribbon__descr {
+    font-size: 14px;
+}
+
+.reviews {
+    padding: 30px 15px;
+}
+
+.reviews__title {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.reviews__descr {
+    margin-bottom: 25px;
+    font-size: 12px;
+}
+
+.reviews__block__text > svg {
+    width: 20px;
+}
+
+.reviews__block__descr {
+    font-size: 12px;
+}
+
+.reviews__block__text {
+    margin-bottom: 0;
+    padding: 15px 15px 0 15px;
+}
+
+.client__name {
+    font-size: 16px;
+}
+
+.client {
+    margin-bottom: 15px;
+}
+
+.footer {
+    padding: 30px 15px;
+}
+
+.footer__container {
+    margin-bottom: 60px;
+}
+
+.info__name {
+    font-size: 14px;
+}
+
+.info__email, .info__phone, .info__adress {
+    font-size: 12px;
+}
+
+.info__adress {
+    max-width: 150px;
+}
+
+.footer__nav__link {
+    font-size: 14px;
+}
+
+.info__descr {
+    font-size: 12px;
+}
+
+.footer__rr {
+    font-size: 10px;
+}
+
+.info__icon > svg {
+    width: 20px;
+}
+
+.info__icon {
+    bottom: -50px;
+}
+
+.info__decor {
+    bottom: -34px;
+}
+}

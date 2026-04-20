@@ -1,0 +1,584 @@
+@font-face {
+    font-family: 'Marxiana';
+    src: local('Marxiana Light'),
+        url('../fonts/TTMarxiana-Elzevir.woff2') format('woff2'),
+        url('../fonts/TTMarxiana-Elzevir.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marxiana';
+    src: local('Marxiana Regular'),
+        url('../fonts/TTMarxiana-Antiqua.woff2') format('woff2'),
+        url('../fonts/TTMarxiana-AntiquaItalic.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marxiana';
+    src: local('Marxiana Italic'),
+        url('../fonts/TTMarxiana-AntiquaItalic.woff2') format('woff2'),
+        url('../fonts/TTMarxiana-AntiquaItalic.woff') format('woff');
+    font-weight: 450;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marxiana';
+    src: local('Marxiana Bold'),
+        url('../fonts/TTMarxiana-Grotesque.woff2') format('woff2'),
+        url('../fonts/TTMarxiana-Grotesque.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-size: 0;
+}
+
+header {
+    background-color: #070E0C;
+}
+
+.flex {
+    display: flex;
+}
+
+.header__container {
+    justify-content: space-between;
+    padding: 5px 30px;
+}
+
+.header__nav {
+    align-items: center;
+    gap: 30px;
+}
+
+.header__link {
+    margin: 0;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FAFAFA;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.header__link:hover,
+.header__link:focus {
+    color: #bea990;
+}
+
+.header__link:active {
+    color: #8d816f;
+}
+
+.hero {
+    padding: 200px 30px;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(7, 14, 12, 0.69), rgba(7, 14, 12, 0.69));
+}
+
+.hero__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.hero__container>svg {
+    padding-left: 50px;
+    width: 80px;
+    height: 80px;
+}
+
+.hero__text {
+    margin-bottom: 40px;
+    max-width: 300px;
+}
+
+.hero__title {
+    margin: 0;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    font-size: 72px;
+    color: #FAFAFA;
+}
+
+.hero__descr {
+    margin: 0;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FAFAFA;
+}
+
+.hero__btn-1,
+.hero__btn-2 {
+    padding: 7px 20px;
+    margin: 0;
+    width: 102px;
+    font-family: 'Marxiana';
+    font-size: 14px;
+    color: #ebe6de;
+    border: 1px solid #717070;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.hero__btn-1 {
+    margin-right: 24px;
+    background-color: #bea990;
+}
+
+.hero__btn-1:hover {
+    background-color: transparent;
+}
+
+.hero__btn-1:focus {
+    border-color: #8d816f;
+}
+
+.hero__btn-1:active {
+    background-color: #8d816f;
+}
+
+.hero__btn-2:hover {
+    background-color: #bea990;
+}
+
+.hero__btn-2:focus {
+    border-color: #8d816f;
+}
+
+.hero__btn-2:active {
+    background-color: #8d816f;
+}
+
+.about-us {
+    justify-content: center;
+    padding: 80px 30px;
+    background-color: #070E0C;
+}
+
+.about-us__container {
+    position: relative;
+    justify-content: space-between;
+    max-width: 1400px;
+}
+
+.about-us__title {
+    margin: 0;
+    padding-left: 90px;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    font-size: 32px;
+    color: #fff;
+}
+
+.about-us__descr {
+    margin: 0;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+.about-us__text {
+    max-width: 60%;
+}
+
+.about-us__text ::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 520px;
+    width: 2px;
+    height: 100%;
+    background: #bea990;
+}
+
+.services {
+    padding: 80px;
+    background-color: #EBE6DE;
+}
+
+.services__container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.services__text {
+    flex-direction: column;
+    align-items: center;
+}
+
+.services__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    font-size: 42px;
+    color: #8d816f;
+}
+
+.services__descr {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    font-size: 18px;
+    color: #070e0c;
+}
+
+.services__blocks {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1400px;
+}
+
+.services__block {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    background-color: #8D816F;
+}
+
+.services__block__text {
+    padding: 30px 40px 0 40px;
+    margin-bottom: 30px;
+}
+
+.services__block__btn {
+    margin-bottom: 30px;
+}
+
+.services__block__text {
+    max-width: 320px;
+}
+
+.services__block__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    font-size: 32px;
+    color: #fff;
+}
+
+.services__block__descr {
+    margin: 0;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+.services__block__links {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.services__block__link {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.services__block__link:hover {
+    color: #bea990;
+}
+
+.services__block__link:hover>.services__block__link__icon {
+    transform: translateX(7px);
+}
+
+.services__block__link:focus {
+    color: #bea990;
+}
+
+.services__block__link:active {
+    color: #717070;
+}
+
+.services__block__link__icon {
+    display: flex;
+    margin-left: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.services__block__link__icon>svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+
+}
+
+.ribbon__container {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.ribbon__descr {
+    margin: 0;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    font-size: 16px;
+    color: #070E0C;
+}
+
+.ribbon__element>svg {
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+    fill: #8D816F;
+}
+
+.ribbon__element {
+    max-width: 229px;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation: marquee 3.1125s infinite linear;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.ribbon__descr {
+    width: 185px;
+}
+
+.reviews {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #EBE6DE;
+}
+
+.reviews__contaimer {
+    flex-direction: column;
+}
+
+.reviews__text {
+    text-align: center;
+}
+
+.reviews__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    font-size: 42px;
+    color: #070e0c;
+}
+
+.reviews__descr {
+    margin: 0;
+    margin-bottom: 50px;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    font-size: 18px;
+    color: #484848;
+}
+
+.reviews__blocks {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-left: 160px;
+    max-width: 1600px;
+}
+
+.reviews__block {
+    max-width: 600px;
+    background-color: #fff;
+}
+
+.reviews__block__text {
+    flex-direction: column;
+    padding: 40px 30px 0 30px;
+    margin-bottom: 40px;
+    min-height: 145px;
+}
+
+.reviews__block__descr {
+    margin: 0;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    font-size: 18px;
+    color: #484848;
+}
+
+.client {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.client__name {
+    margin: 0;
+    margin-right: 20px;
+    font-family: 'Marxiana';
+    font-weight: 700;
+    font-size: 20px;
+    color: #070e0c;
+}
+
+.client__photo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.footer {
+    padding: 80px 240px;
+    background-color: #070E0C;
+}
+
+.footer__container {
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.info {
+    padding: 0;
+    list-style-type: none;
+}
+
+.info__list:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.info__name {
+    margin: 0;
+    font-family: 'Marxiana';
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+.info__email,
+.info__phone,
+.info__adress {
+    margin: 0;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    font-style: normal;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.info__email:hover,
+.info__phone:hover {
+    color: #bea990;
+}
+
+.info__email:focus,
+.info__phone:focus {
+    color: #bea990;
+}
+
+.info__email:active,
+.info__phone:active {
+    color: #8d816f;
+}
+
+.info__descr {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+.info__decor {
+    position: absolute;
+    content: "";
+    bottom: -54px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.info__icon>svg>path {
+    fill: #fff;
+}
+
+.info__icon {
+    position: absolute;
+    bottom: -70px;
+    right: 260px;
+}
+
+.footer__nav {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer__nav__link {
+    margin: 0;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer__nav__link:hover {
+    color: #bea990;
+}
+
+.footer__nav__link:focus {
+    color: #bea990;
+}
+
+.footer__nav__link:active {
+    color: #8d816f;
+}
+
+.footer__rr {
+    margin: 0;
+    text-align: center;
+    font-family: 'Marxiana';
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+}
