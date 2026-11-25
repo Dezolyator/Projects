@@ -1,0 +1,476 @@
+:root {
+    --bg: #f2f2f0;
+    --surface: #ffffff;
+    --surface-2: #e8e8e5;
+    --text: #1c1c1e;
+    --muted: #5f6063;
+    --border: #dcdcd8;
+    --accent: #f59e0b;
+    --accent-hover: #d98a06;
+    --accent-text: #b45309;
+    --on-accent: #1c1c1e;
+    --shadow: 0 1px 2px rgba(28, 28, 30, .04), 0 8px 24px rgba(28, 28, 30, .07);
+    --serif: "Tiempos Headline", "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+:root[data-theme="dark"] {
+    --bg: #1c1d1f;
+    --surface: #27292c;
+    --surface-2: #17181a;
+    --text: #f2f2f0;
+    --muted: #a9aaad;
+    --border: #3a3c40;
+    --accent: #fbbf24;
+    --accent-hover: #fcd34d;
+    --accent-text: #fbbf24;
+    --on-accent: #1c1d1f;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .35);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    transition: background .25s, color .25s
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--serif);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -.01em
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border)
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    gap: 12px
+}
+
+.brand {
+    font-family: var(--serif);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.brand i {
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    background: var(--accent);
+    display: inline-block;
+    position: relative
+}
+
+.brand i::after {
+    content: "";
+    position: absolute;
+    inset: 7px;
+    border: 2px solid var(--on-accent);
+    border-radius: 3px
+}
+
+nav ul {
+    display: flex;
+    gap: 26px;
+    list-style: none;
+    font-size: 15px;
+    color: var(--muted)
+}
+
+nav a:hover {
+    color: var(--text)
+}
+
+.theme {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 20;
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    font-size: 19px;
+    box-shadow: var(--shadow)
+}
+
+.theme:hover {
+    border-color: var(--accent)
+}
+
+.hero {
+    padding: 88px 0 72px
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 64px);
+    max-width: 15ch
+}
+
+.hero p.lead {
+    font-size: clamp(17px, 2vw, 20px);
+    color: var(--muted);
+    max-width: 56ch;
+    margin: 24px 0 36px
+}
+
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    transition: .15s;
+    cursor: pointer
+}
+
+.btn:hover {
+    border-color: var(--accent);
+    transform: translateY(-1px)
+}
+
+.btn.primary {
+    background: var(--accent);
+    color: var(--on-accent);
+    border-color: var(--accent)
+}
+
+.btn.primary:hover {
+    background: var(--accent-hover)
+}
+
+.facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 56px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border)
+}
+
+.facts b {
+    display: block;
+    font-family: var(--serif);
+    font-size: 34px;
+    font-weight: 500
+}
+
+.facts span {
+    color: var(--muted);
+    font-size: 14px
+}
+
+section {
+    padding: 72px 0
+}
+
+section.alt {
+    background: var(--surface-2)
+}
+
+.head {
+    margin-bottom: 40px
+}
+
+.head h2 {
+    font-size: clamp(30px, 4vw, 42px)
+}
+
+.head p {
+    color: var(--muted);
+    margin-top: 12px;
+    max-width: 60ch
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 20px
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: var(--shadow)
+}
+
+.card .ico {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--accent) 16%, transparent);
+    color: var(--accent-text);
+    display: grid;
+    place-items: center;
+    margin-bottom: 18px
+}
+
+.card .ico svg {
+    width: 24px;
+    height: 24px
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 8px
+}
+
+.card p {
+    color: var(--muted);
+    font-size: 15px
+}
+
+.card ul {
+    list-style: none;
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 15px
+}
+
+.card li {
+    padding-left: 18px;
+    position: relative;
+    margin-top: 4px
+}
+
+.card li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .7em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent)
+}
+
+.works {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px
+}
+
+.work {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow)
+}
+
+.pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    background: var(--border)
+}
+
+.shot {
+    position: relative;
+    aspect-ratio: 4/5;
+    background: var(--surface-2);
+    overflow: hidden
+}
+
+.shot img,
+.shot svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block
+}
+
+.shot em {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(20, 20, 19, .72);
+    color: #fff
+}
+
+.shot.after em {
+    background: var(--accent);
+    color: var(--on-accent)
+}
+
+.work .info {
+    padding: 18px 22px 22px
+}
+
+.work h3 {
+    font-size: 20px
+}
+
+.work p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 4px
+}
+
+.price {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between
+}
+
+.price h2 {
+    font-size: clamp(26px, 3.4vw, 36px);
+    max-width: 22ch
+}
+
+.price p {
+    color: var(--muted);
+    max-width: 46ch;
+    margin-top: 10px
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px
+}
+
+.contact {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 24px;
+    transition: .15s
+}
+
+.contact:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px)
+}
+
+.contact .ico {
+    flex: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: var(--accent);
+    color: var(--on-accent);
+    display: grid;
+    place-items: center
+}
+
+.contact .ico svg {
+    width: 24px;
+    height: 24px
+}
+
+.contact small {
+    display: block;
+    color: var(--muted);
+    font-size: 13px
+}
+
+.contact strong {
+    font-size: 19px;
+    font-weight: 600
+}
+
+footer {
+    border-top: 1px solid var(--border);
+    padding: 28px 0;
+    color: var(--muted);
+    font-size: 14px
+}
+
+footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px
+}
+
+@media(max-width:720px) {
+    nav ul {
+        display: none
+    }
+
+    .hero {
+        padding: 56px 0 48px
+    }
+
+    section {
+        padding: 52px 0
+    }
+
+    .btn {
+        flex: 1 1 100%;
+        justify-content: center
+    }
+
+    .facts {
+        gap: 28px
+    }
+}
